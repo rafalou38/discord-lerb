@@ -7,7 +7,7 @@ export default {
 	description: "te donne un nom aleatoire en lerb",
 
 	slash: true,
-	testOnly: true,
+	testOnly: false,
 	callback: async ({ member: fake_member, channel }) => {
 		const member = await getMemberById(fake_member.user.id, channel);
 
@@ -22,5 +22,5 @@ export default {
 		await member?.setNickname(new_lerb);
 		return `ton nom est désormais: **${new_lerb}**`;
 	},
-	category: "",
+	category: "lerb",
 } as ICommand;

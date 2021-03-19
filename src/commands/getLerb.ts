@@ -7,7 +7,7 @@ export default {
 	description: "te donne un lerb aléatoire",
 
 	slash: true,
-	testOnly: true,
+	testOnly: false,
 	callback: () => {
 		return getLerb();
 	},
