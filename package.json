@@ -9,8 +9,8 @@
   "private": false,
   "scripts": {
 		"rimraf": "./node_modules/rimraf/bin.js",
-    "precompile": "rimraf build/",
-    "compile": "tsc",
+    "prebuild": "rimraf build/",
+    "build": "tsc",
     "start": "node ./build/index.js"
   },
   "devDependencies": {
