@@ -1,7 +1,6 @@
-import { Client } from "discord.js";
 import getLerb from "../adjectif";
 import { ICommand } from "../types/wokcommands";
-import { getMemberById, getUserById } from "../utils";
+import { getMemberById, } from "../utils";
 
 export default {
 	names: "lerbMe",
@@ -9,7 +8,7 @@ export default {
 
 	slash: true,
 	testOnly: true,
-	callback: async ({ client, member: fake_member, channel }) => {
+	callback: async ({ member: fake_member, channel }) => {
 		const member = await getMemberById(fake_member.user.id, channel);
 
 		const new_lerb = getLerb();

@@ -1,4 +1,4 @@
-import { Client, GuildMember, Message, TeamMember, TextChannel } from "discord.js";
+import { Client, Message, TextChannel } from "discord.js";
 import WOKCommands from "wokcommands";
 import BaseICommand from "wokcommands/dist/interfaces/ICommand";
 
